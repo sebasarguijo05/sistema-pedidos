@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -57,3 +58,44 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+=======
+# Sistema de Pedidos
+
+Sistema web para gestionar pedidos de productos con dos niveles de usuario: Administrador y Usuario.
+
+## 🚀 Características
+
+### Para Administradores:
+- Dashboard con estadísticas
+- Gestión completa de productos (CRUD)
+- Gestión de pedidos con estados
+- Vista de usuarios registrados
+- Productos más vendidos
+
+### Para Usuarios:
+- Catálogo de productos con búsqueda
+- Carrito de compras
+- Realizar pedidos
+- Historial de pedidos
+- Seguimiento de estado de pedidos
+
+## 🛠️ Tecnologías
+
+- Laravel 11
+- PHP 8.2+
+- MySQL
+- Bootstrap 5
+- Vite
+
+## 📋 Requisitos
+
+- PHP 8.2 o superior
+- Composer
+- Node.js y NPM
+- MySQL
+- Laragon (recomendado)
+
+
+
+Este proyecto es de código abierto.
+>>>>>>> 69d1d09e40f22cfc498cb9d4f319eda9bcf40369
