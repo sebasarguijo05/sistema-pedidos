@@ -1,0 +1,520 @@
+@import 'bootstrap';
+
+/* ===================================
+   Variables de Color Profesionales
+   =================================== */
+:root {
+    /* Colores principales - Paleta profesional azul oscuro y acentos */
+    --primary-color: #2C3E50;
+    --primary-dark: #1a252f;
+    --primary-light: #34495E;
+    
+    --accent-color: #3498DB;
+    --accent-dark: #2980B9;
+    --accent-light: #5DADE2;
+    
+    --success-color: #27AE60;
+    --success-light: #2ECC71;
+    
+    --warning-color: #F39C12;
+    --warning-light: #F1C40F;
+    
+    --danger-color: #E74C3C;
+    --danger-light: #EC7063;
+    
+    --info-color: #16A085;
+    --info-light: #1ABC9C;
+    
+    /* Grises profesionales */
+    --gray-50: #FAFAFA;
+    --gray-100: #F5F5F5;
+    --gray-200: #EEEEEE;
+    --gray-300: #E0E0E0;
+    --gray-400: #BDBDBD;
+    --gray-500: #9E9E9E;
+    --gray-600: #757575;
+    --gray-700: #616161;
+    --gray-800: #424242;
+    --gray-900: #212121;
+    
+    /* Espaciado */
+    --border-radius: 8px;
+    --border-radius-lg: 12px;
+    --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --box-shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.12);
+    --box-shadow-hover: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ===================================
+   Estilos Generales
+   =================================== */
+body {
+    font-family: 'Inter', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: var(--gray-100);
+    color: var(--gray-900);
+    line-height: 1.6;
+}
+
+/* ===================================
+   Navbar Profesional
+   =================================== */
+.navbar {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%) !important;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: white !important;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+    transform: translateY(-2px);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    transition: all 0.3s ease;
+    margin: 0 0.2rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white !important;
+    transform: translateY(-2px);
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white !important;
+}
+
+.dropdown-menu {
+    border: none;
+    box-shadow: var(--box-shadow-lg);
+    border-radius: var(--border-radius);
+    margin-top: 0.5rem;
+}
+
+.dropdown-item {
+    padding: 0.75rem 1.5rem;
+    transition: all 0.2s ease;
+}
+
+.dropdown-item:hover {
+    background-color: var(--gray-100);
+    color: var(--primary-color);
+    padding-left: 2rem;
+}
+
+/* ===================================
+   Cards Profesionales
+   =================================== */
+.card {
+    border: none;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--box-shadow);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    box-shadow: var(--box-shadow-hover);
+    transform: translateY(-4px);
+}
+
+.card-header {
+    background: linear-gradient(135deg, var(--gray-50) 0%, white 100%);
+    border-bottom: 2px solid var(--gray-200);
+    padding: 1.25rem 1.5rem;
+    font-weight: 600;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+/* ===================================
+   Tarjetas de Estadísticas
+   =================================== */
+.card.border-primary {
+    border-left: 4px solid var(--accent-color) !important;
+    background: linear-gradient(135deg, #EBF5FB 0%, white 100%);
+}
+
+.card.border-success {
+    border-left: 4px solid var(--success-color) !important;
+    background: linear-gradient(135deg, #E8F8F5 0%, white 100%);
+}
+
+.card.border-warning {
+    border-left: 4px solid var(--warning-color) !important;
+    background: linear-gradient(135deg, #FEF5E7 0%, white 100%);
+}
+
+.card.border-info {
+    border-left: 4px solid var(--info-color) !important;
+    background: linear-gradient(135deg, #E8F6F3 0%, white 100%);
+}
+
+.card.border-danger {
+    border-left: 4px solid var(--danger-color) !important;
+    background: linear-gradient(135deg, #FDEDEC 0%, white 100%);
+}
+
+/* ===================================
+   Botones Profesionales
+   =================================== */
+.btn {
+    font-weight: 500;
+    padding: 0.625rem 1.5rem;
+    border-radius: var(--border-radius);
+    transition: all 0.3s ease;
+    border: none;
+    text-transform: none;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-dark) 100%);
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, var(--accent-dark) 0%, var(--accent-color) 100%);
+    box-shadow: 0 6px 16px rgba(52, 152, 219, 0.4);
+    transform: translateY(-2px);
+}
+
+.btn-success {
+    background: linear-gradient(135deg, var(--success-color) 0%, var(--success-light) 100%);
+    box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
+}
+
+.btn-success:hover {
+    background: linear-gradient(135deg, var(--success-light) 0%, var(--success-color) 100%);
+    box-shadow: 0 6px 16px rgba(39, 174, 96, 0.4);
+    transform: translateY(-2px);
+}
+
+.btn-warning {
+    background: linear-gradient(135deg, var(--warning-color) 0%, var(--warning-light) 100%);
+    box-shadow: 0 4px 12px rgba(243, 156, 18, 0.3);
+}
+
+.btn-warning:hover {
+    background: linear-gradient(135deg, var(--warning-light) 0%, var(--warning-color) 100%);
+    box-shadow: 0 6px 16px rgba(243, 156, 18, 0.4);
+    transform: translateY(-2px);
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, var(--danger-color) 0%, var(--danger-light) 100%);
+    box-shadow: 0 4px 12px rgba(231, 76, 60, 0.3);
+}
+
+.btn-danger:hover {
+    background: linear-gradient(135deg, var(--danger-light) 0%, var(--danger-color) 100%);
+    box-shadow: 0 6px 16px rgba(231, 76, 60, 0.4);
+    transform: translateY(-2px);
+}
+
+.btn-outline-primary {
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+    background: transparent;
+}
+
+.btn-outline-primary:hover {
+    background: var(--accent-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-outline-secondary {
+    border: 2px solid var(--gray-400);
+    color: var(--gray-700);
+    background: transparent;
+}
+
+.btn-outline-secondary:hover {
+    background: var(--gray-700);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* ===================================
+   Tablas Profesionales
+   =================================== */
+.table {
+    background: white;
+    border-radius: var(--border-radius);
+}
+
+.table thead th {
+    background: linear-gradient(135deg, var(--gray-100) 0%, var(--gray-50) 100%);
+    color: var(--gray-800);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid var(--gray-300);
+    padding: 1rem;
+}
+
+.table tbody tr {
+    transition: all 0.2s ease;
+}
+
+.table-hover tbody tr:hover {
+    background-color: var(--gray-50);
+    transform: scale(1.01);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* ===================================
+   Badges Profesionales
+   =================================== */
+.badge {
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    border-radius: var(--border-radius);
+    font-size: 0.85rem;
+}
+
+.bg-primary {
+    background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-dark) 100%) !important;
+}
+
+.bg-success {
+    background: linear-gradient(135deg, var(--success-color) 0%, var(--success-light) 100%) !important;
+}
+
+.bg-warning {
+    background: linear-gradient(135deg, var(--warning-color) 0%, var(--warning-light) 100%) !important;
+}
+
+.bg-danger {
+    background: linear-gradient(135deg, var(--danger-color) 0%, var(--danger-light) 100%) !important;
+}
+
+.bg-info {
+    background: linear-gradient(135deg, var(--info-color) 0%, var(--info-light) 100%) !important;
+}
+
+/* ===================================
+   Formularios Profesionales
+   =================================== */
+.form-control, .form-select {
+    border: 2px solid var(--gray-300);
+    border-radius: var(--border-radius);
+    padding: 0.75rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.15);
+}
+
+.form-label {
+    font-weight: 600;
+    color: var(--gray-700);
+    margin-bottom: 0.5rem;
+}
+
+/* ===================================
+   Alertas Profesionales
+   =================================== */
+.alert {
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 1rem 1.5rem;
+    border-left: 4px solid;
+}
+
+.alert-success {
+    background-color: #E8F8F5;
+    border-left-color: var(--success-color);
+    color: #0E6655;
+}
+
+.alert-danger {
+    background-color: #FDEDEC;
+    border-left-color: var(--danger-color);
+    color: #922B21;
+}
+
+.alert-warning {
+    background-color: #FEF5E7;
+    border-left-color: var(--warning-color);
+    color: #7D6608;
+}
+
+.alert-info {
+    background-color: #EBF5FB;
+    border-left-color: var(--accent-color);
+    color: #1B4F72;
+}
+
+/* ===================================
+   Footer Profesional
+   =================================== */
+footer {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+    color: white;
+    margin-top: auto;
+}
+
+footer p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* ===================================
+   Catálogo de Productos
+   =================================== */
+.product-card {
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--box-shadow-hover);
+}
+
+.product-card img {
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+/* ===================================
+   Breadcrumb Profesional
+   =================================== */
+.breadcrumb {
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: var(--gray-500);
+}
+
+.breadcrumb-item.active {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+/* ===================================
+   Paginación Profesional
+   =================================== */
+.pagination {
+    gap: 0.5rem;
+}
+
+.page-link {
+    border: none;
+    border-radius: var(--border-radius);
+    color: var(--accent-color);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.page-link:hover {
+    background-color: var(--accent-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.page-item.active .page-link {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+/* ===================================
+   Inputs Mejorados
+   =================================== */
+.input-group-text {
+    background: linear-gradient(135deg, var(--gray-100) 0%, var(--gray-50) 100%);
+    border: 2px solid var(--gray-300);
+    color: var(--gray-700);
+    font-weight: 600;
+}
+
+/* ===================================
+   Títulos
+   =================================== */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.h2 {
+    color: var(--primary-color);
+}
+
+/* ===================================
+   Animaciones
+   =================================== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card, .alert, .table {
+    animation: fadeIn 0.5s ease;
+}
+
+/* ===================================
+   Scrollbar Personalizado
+   =================================== */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--gray-100);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--gray-400);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gray-500);
+}
+
+/* ===================================
+   Responsividad
+   =================================== */
+@media (max-width: 768px) {
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .btn {
+        padding: 0.5rem 1rem;
+    }
+    
+    .table {
+        font-size: 0.9rem;
+    }
+}
