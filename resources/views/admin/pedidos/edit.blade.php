@@ -32,7 +32,7 @@
 
                         <div class="mb-3">
                             <label class="form-label"><strong>Total del Pedido:</strong></label>
-                            <p class="text-primary fs-5">${{ number_format($pedido->total, 2) }}</p>
+                            <p class="text-primary fs-5">HNL {{ number_format($pedido->total, 2) }}</p>
                         </div>
 
                         <div class="mb-3">

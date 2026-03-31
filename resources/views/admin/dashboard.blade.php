@@ -141,7 +141,7 @@
                                         <tr>
                                             <td><strong>#{{ $pedido->id }}</strong></td>
                                             <td>{{ $pedido->user->name }}</td>
-                                            <td>${{ number_format($pedido->total, 2) }}</td>
+                                            <td>HNL {{ number_format($pedido->total, 2) }}</td>
                                             <td>
                                                 @if($pedido->estado == 'pendiente')
                                                     <span class="badge bg-warning text-dark">Pendiente</span>
@@ -184,7 +184,7 @@
                                     <div>
                                         <strong>{{ $item->producto->nombre }}</strong>
                                         <br>
-                                        <small class="text-muted">${{ number_format($item->producto->precio, 2) }}</small>
+                                        <small class="text-muted">HNL {{ number_format($item->producto->precio, 2) }}</small>
                                     </div>
                                     <span class="badge bg-primary rounded-pill">
                                         {{ $item->total_vendido }} vendidos

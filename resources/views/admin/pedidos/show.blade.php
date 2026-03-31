@@ -51,16 +51,16 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td>${{ number_format($detalle->precio_unitario, 2) }}</td>
+                                        <td>HNL {{ number_format($detalle->precio_unitario, 2) }}</td>
                                         <td>{{ $detalle->cantidad }}</td>
-                                        <td><strong>${{ number_format($detalle->subtotal, 2) }}</strong></td>
+                                        <td><strong>HNL {{ number_format($detalle->subtotal, 2) }}</strong></td>
                                     </tr>
                                 @endforeach
                             </tbody>
                             <tfoot>
                                 <tr>
                                     <td colspan="3" class="text-end"><strong>Total:</strong></td>
-                                    <td><strong class="text-primary fs-5">${{ number_format($pedido->total, 2) }}</strong></td>
+                                    <td><strong class="text-primary fs-5">HNL {{ number_format($pedido->total, 2) }}</strong></td>
                                 </tr>
                             </tfoot>
                         </table>

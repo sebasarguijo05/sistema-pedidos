@@ -52,7 +52,7 @@
                             <div class="col-md-6 mb-3">
                                 <label for="precio" class="form-label">Precio *</label>
                                 <div class="input-group">
-                                    <span class="input-group-text">$</span>
+                                    <span class="input-group-text">HNL</span>
                                     <input type="number" 
                                            class="form-control @error('precio') is-invalid @enderror" 
                                            id="precio" 

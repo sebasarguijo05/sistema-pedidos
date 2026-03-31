@@ -65,7 +65,7 @@
                                 <div class="col-md-4 text-end d-flex flex-column justify-content-between">
                                     <div>
                                         <p class="text-muted mb-1">Total del Pedido</p>
-                                        <h3 class="text-primary mb-3">${{ number_format($pedido->total, 2) }}</h3>
+                                        <h3 class="text-primary mb-3">HNL {{ number_format($pedido->total, 2) }}</h3>
                                     </div>
                                     <div>
                                         <a href="{{ route('pedidos.show', $pedido) }}" class="btn btn-outline-primary">
