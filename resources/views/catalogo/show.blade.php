@@ -41,7 +41,7 @@
             </div>
 
             <div class="mb-4">
-                <span class="text-primary display-5 fw-bold">${{ number_format($producto->precio, 2) }}</span>
+                <span class="text-primary display-5 fw-bold">HNL {{ number_format($producto->precio, 2) }}</span>
             </div>
 
             <div class="mb-4">

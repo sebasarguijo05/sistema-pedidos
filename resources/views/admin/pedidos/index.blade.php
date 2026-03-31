@@ -62,7 +62,7 @@
                                         <br>
                                         <small class="text-muted">{{ $pedido->user->email }}</small>
                                     </td>
-                                    <td><strong>${{ number_format($pedido->total, 2) }}</strong></td>
+                                    <td><strong>HNL {{ number_format($pedido->total, 2) }}</strong></td>
                                     <td>
                                         @if($pedido->estado == 'pendiente')
                                             <span class="badge bg-warning text-dark">Pendiente</span>

@@ -125,7 +125,7 @@
                             </div>
                             <div class="col-md-2 text-end">
                                 <p class="mb-0 text-muted">Subtotal</p>
-                                <strong class="text-primary fs-5">${{ number_format($detalle->subtotal, 2) }}</strong>
+                                <strong class="text-primary fs-5">HNL {{ number_format($detalle->subtotal, 2) }}</strong>
                             </div>
                         </div>
                     @endforeach
@@ -134,12 +134,12 @@
                         <div class="col-md-8 offset-md-4">
                             <div class="d-flex justify-content-between mb-2">
                                 <span class="text-muted">Subtotal:</span>
-                                <span>${{ number_format($pedido->total, 2) }}</span>
+                                <span>HNL {{ number_format($pedido->total, 2) }}</span>
                             </div>
                             <hr>
                             <div class="d-flex justify-content-between">
                                 <strong class="fs-5">Total:</strong>
-                                <strong class="text-primary fs-3">${{ number_format($pedido->total, 2) }}</strong>
+                                <strong class="text-primary fs-3">HNL {{ number_format($pedido->total, 2) }}</strong>
                             </div>
                         </div>
                     </div>

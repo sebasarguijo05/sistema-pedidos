@@ -31,7 +31,7 @@
                                 </div>
                                 <div class="col-md-4">
                                     <h5>{{ $item['nombre'] }}</h5>
-                                    <p class="text-muted mb-0">${{ number_format($item['precio'], 2) }} c/u</p>
+                                    <p class="text-muted mb-0">HNL {{ number_format($item['precio'], 2) }} c/u</p>
                                 </div>
                                 <div class="col-md-3">
                                     <form action="{{ route('carrito.actualizar', $id) }}" method="POST">
@@ -84,12 +84,12 @@
                     <div class="card-body">
                         <div class="d-flex justify-content-between mb-2">
                             <span>Subtotal:</span>
-                            <span>${{ number_format($total, 2) }}</span>
+                            <span>HNL {{ number_format($total, 2) }}</span>
                         </div>
                         <hr>
                         <div class="d-flex justify-content-between mb-3">
                             <strong>Total:</strong>
-                            <strong class="text-primary fs-4">${{ number_format($total, 2) }}</strong>
+                            <strong class="text-primary fs-4">HNL {{ number_format($total, 2) }}</strong>
                         </div>
 
                         <form action="{{ route('pedidos.crear') }}" method="POST">
