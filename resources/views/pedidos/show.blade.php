@@ -17,7 +17,7 @@
                 <div>
                     <h1 class="h2 mb-1"><i class="bi bi-receipt-cutoff"></i> Pedido #{{ $pedido->id }}</h1>
                     <p class="text-muted mb-0">
-                        <i class="bi bi-calendar"></i> Realizado el {{ $pedido->created_at->format('d/m/Y') }} 
+                        <i class="bi bi-calendar"></i> Realizado el {{ $pedido->created_at->format('d/m/Y') }}
                         a las {{ $pedido->created_at->format('H:i') }}
                     </p>
                 </div>
@@ -82,7 +82,7 @@
 
                     @if($pedido->estado == 'cancelado')
                         <div class="alert alert-danger mt-3 mb-0">
-                            <i class="bi bi-exclamation-triangle"></i> 
+                            <i class="bi bi-exclamation-triangle"></i>
                             <strong>Este pedido ha sido cancelado</strong>
                         </div>
                     @endif
@@ -103,11 +103,11 @@
                         <div class="row mb-3 pb-3 {{ !$loop->last ? 'border-bottom' : '' }}">
                             <div class="col-md-2">
                                 @if($detalle->producto->imagen)
-                                    <img src="{{ asset('storage/' . $detalle->producto->imagen) }}" 
-                                         class="img-fluid rounded" 
+                                    <img src="{{ asset('storage/' . $detalle->producto->imagen) }}"
+                                         class="img-fluid rounded"
                                          alt="{{ $detalle->producto->nombre }}">
                                 @else
-                                    <div class="bg-light rounded d-flex align-items-center justify-content-center" 
+                                    <div class="bg-light rounded d-flex align-items-center justify-content-center"
                                          style="height: 80px;">
                                         <i class="bi bi-image"></i>
                                     </div>
@@ -116,7 +116,7 @@
                             <div class="col-md-6">
                                 <h6 class="mb-1">{{ $detalle->producto->nombre }}</h6>
                                 <p class="text-muted mb-0">
-                                    <small>Precio unitario: ${{ number_format($detalle->precio_unitario, 2) }}</small>
+                                    <small>Precio unitario: HNL {{ number_format($detalle->precio_unitario, 2) }}</small>
                                 </p>
                             </div>
                             <div class="col-md-2 text-center">

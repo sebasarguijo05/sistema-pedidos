@@ -19,11 +19,11 @@
                             <div class="row mb-3 pb-3 border-bottom">
                                 <div class="col-md-2">
                                     @if($item['imagen'])
-                                        <img src="{{ asset('storage/' . $item['imagen']) }}" 
-                                             class="img-fluid rounded" 
+                                        <img src="{{ asset('storage/' . $item['imagen']) }}"
+                                             class="img-fluid rounded"
                                              alt="{{ $item['nombre'] }}">
                                     @else
-                                        <div class="bg-light rounded d-flex align-items-center justify-content-center" 
+                                        <div class="bg-light rounded d-flex align-items-center justify-content-center"
                                              style="height: 80px;">
                                             <i class="bi bi-image"></i>
                                         </div>
@@ -38,10 +38,10 @@
                                         @csrf
                                         @method('PUT')
                                         <div class="input-group">
-                                            <input type="number" 
-                                                   name="cantidad" 
-                                                   value="{{ $item['cantidad'] }}" 
-                                                   min="1" 
+                                            <input type="number"
+                                                   name="cantidad"
+                                                   value="{{ $item['cantidad'] }}"
+                                                   min="1"
                                                    class="form-control"
                                                    onchange="this.form.submit()">
                                             <span class="input-group-text">uds</span>
@@ -50,7 +50,7 @@
                                 </div>
                                 <div class="col-md-2 text-end">
                                     <p class="fw-bold fs-5 mb-2">
-                                        ${{ number_format($item['precio'] * $item['cantidad'], 2) }}
+                                        HNL {{ number_format($item['precio'] * $item['cantidad'], 2) }}
                                     </p>
                                     <form action="{{ route('carrito.eliminar', $id) }}" method="POST">
                                         @csrf
@@ -96,10 +96,10 @@
                             @csrf
                             <div class="mb-3">
                                 <label for="notas" class="form-label">Notas del Pedido (Opcional)</label>
-                                <textarea class="form-control" 
-                                          id="notas" 
-                                          name="notas" 
-                                          rows="3" 
+                                <textarea class="form-control"
+                                          id="notas"
+                                          name="notas"
+                                          rows="3"
                                           placeholder="Instrucciones especiales..."></textarea>
                             </div>
 
