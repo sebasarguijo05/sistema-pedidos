@@ -37,9 +37,9 @@
 
                         <div class="mb-3">
                             <label for="estado" class="form-label">Estado del Pedido *</label>
-                            <select name="estado" 
-                                    id="estado" 
-                                    class="form-select @error('estado') is-invalid @enderror" 
+                            <select name="estado"
+                                    id="estado"
+                                    class="form-select @error('estado') is-invalid @enderror"
                                     required>
                                 <option value="pendiente" {{ old('estado', $pedido->estado) == 'pendiente' ? 'selected' : '' }}>
                                     Pendiente
@@ -64,9 +64,9 @@
 
                         <div class="mb-3">
                             <label for="notas" class="form-label">Notas Adicionales</label>
-                            <textarea class="form-control @error('notas') is-invalid @enderror" 
-                                      id="notas" 
-                                      name="notas" 
+                            <textarea class="form-control @error('notas') is-invalid @enderror"
+                                      id="notas"
+                                      name="notas"
                                       rows="4">{{ old('notas', $pedido->notas) }}</textarea>
                             @error('notas')
                                 <div class="invalid-feedback">{{ $message }}</div>
@@ -101,11 +101,11 @@
                                     <strong>{{ $detalle->producto->nombre }}</strong>
                                     <br>
                                     <small class="text-muted">
-                                        Cantidad: {{ $detalle->cantidad }} × ${{ number_format($detalle->precio_unitario, 2) }}
+                                        Cantidad: {{ $detalle->cantidad }} × HNL {{ number_format($detalle->precio_unitario, 2) }}
                                     </small>
                                 </div>
                                 <span class="badge bg-primary rounded-pill">
-                                    ${{ number_format($detalle->subtotal, 2) }}
+                                    HNL {{ number_format($detalle->subtotal, 2) }}
                                 </span>
                             </li>
                         @endforeach
