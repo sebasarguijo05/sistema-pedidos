@@ -34,6 +34,7 @@ class DatabaseSeeder extends Seeder
                 'descripcion' => 'Laptop HP Pavilion con procesador Intel Core i5, 8GB RAM, 256GB SSD, pantalla de 15.6 pulgadas.',
                 'precio' => 15999.00,
                 'stock' => 15,
+                'imagen' => 'productos/laptop-hp.png',
                 'activo' => true,
             ],
             [
@@ -41,6 +42,7 @@ class DatabaseSeeder extends Seeder
                 'descripcion' => 'Mouse inalámbrico ergonómico con sensor de alta precisión, ideal para profesionales.',
                 'precio' => 2399.00,
                 'stock' => 30,
+                'imagen' => 'productos/mouse-master3.png',
                 'activo' => true,
             ],
             [
@@ -48,6 +50,7 @@ class DatabaseSeeder extends Seeder
                 'descripcion' => 'Teclado mecánico con switches Cherry MX, iluminación RGB personalizable.',
                 'precio' => 3499.00,
                 'stock' => 20,
+                'imagen' => 'productos/teclado-mecanico.png',
                 'activo' => true,
             ],
             [
@@ -55,6 +58,7 @@ class DatabaseSeeder extends Seeder
                 'descripcion' => 'Monitor UHD 4K de 27 pulgadas con tecnología IPS, ideal para diseño y gaming.',
                 'precio' => 10699.00,
                 'stock' => 10,
+                'imagen' => 'productos/monitor-lg.png',
                 'activo' => true,
             ],
             [
@@ -62,6 +66,7 @@ class DatabaseSeeder extends Seeder
                 'descripcion' => 'Auriculares inalámbricos con cancelación de ruido líder en la industria.',
                 'precio' => 9299.00,
                 'stock' => 25,
+                'imagen' => 'productos/auriculares-sony.png',
                 'activo' => true,
             ],
             [
@@ -69,6 +74,7 @@ class DatabaseSeeder extends Seeder
                 'descripcion' => 'Webcam Full HD 1080p con enfoque automático y corrección de luz.',
                 'precio' => 1899.00,
                 'stock' => 40,
+                'imagen' => 'productos/webcam-logitech.png',
                 'activo' => true,
             ],
             [
@@ -76,6 +82,7 @@ class DatabaseSeeder extends Seeder
                 'descripcion' => 'Disco duro externo portátil de 2TB con USB 3.0, ideal para respaldos.',
                 'precio' => 2199.00,
                 'stock' => 35,
+                'imagen' => 'productos/discoduro-2tb.png',
                 'activo' => true,
             ],
             [
@@ -83,6 +90,7 @@ class DatabaseSeeder extends Seeder
                 'descripcion' => 'Router de última generación WiFi 6 con velocidades de hasta 3000 Mbps.',
                 'precio' => 3999.00,
                 'stock' => 18,
+                'imagen' => 'productos/router-wifi6.png',
                 'activo' => true,
             ],
             [
@@ -90,6 +98,7 @@ class DatabaseSeeder extends Seeder
                 'descripcion' => 'Tablet Android con pantalla de 11 pulgadas, procesador Snapdragon y S Pen incluido.',
                 'precio' => 17299.00,
                 'stock' => 12,
+                'imagen' => 'productos/tablet-tabs7.png',
                 'activo' => true,
             ],
             [
@@ -97,6 +106,7 @@ class DatabaseSeeder extends Seeder
                 'descripcion' => 'Impresora láser monocromática con WiFi, perfecta para oficina en casa.',
                 'precio' => 5299.00,
                 'stock' => 8,
+                'imagen' => 'productos/impresora-hp.png',
                 'activo' => true,
             ],
         ];
